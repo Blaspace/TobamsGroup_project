@@ -7,7 +7,7 @@ const LogoSection: React.FC = () => {
         <ul>
           {[2, 1, 2, 3].map((index) => (
             <li key={index}>
-              <img src={require(`../public/Vector-${index}.png`)} alt={`vector-${index}`} />
+              <img src={require(`../../public/Vector-${index}.png`)} alt={`vector-${index}`} />
             </li>
           ))}
         </ul>

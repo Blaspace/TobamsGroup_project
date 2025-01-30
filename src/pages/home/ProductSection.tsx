@@ -20,37 +20,37 @@ const ProductSection: React.FC = () => {
   const products = [
     {
       id: 1,
-      image: require("../public/product.jpeg"),
+      image: require("../../public/product.jpeg"),
       title: "Lorem ipsum dolor sit amet.",
       price: "1.15ETH",
     },
     {
       id: 2,
-      image: require("../public/Image-1 (2).png"),
+      image: require("../../public/Image-1 (2).png"),
       title: "Lorem ipsum dolor sit amet.",
       price: "1.15ETH",
     },
     {
       id: 2,
-      image: require("../public/Image-2 (2).png"),
+      image: require("../../public/Image-2 (2).png"),
       title: "Lorem ipsum dolor sit amet.",
       price: "1.15ETH",
     },
     {
       id: 2,
-      image: require("../public/Image-3 (2).png"),
+      image: require("../../public/Image-3 (2).png"),
       title: "Lorem ipsum dolor sit amet.",
       price: "1.15ETH",
     },
     {
       id: 2,
-      image: require("../public/Image-4 (2).png"),
+      image: require("../../public/Image-4 (2).png"),
       title: "Lorem ipsum dolor sit amet.",
       price: "1.15ETH",
     },
     {
       id: 2,
-      image: require("../public/product-1.png"),
+      image: require("../../public/product-1.png"),
       title: "Lorem ipsum dolor sit amet.",
       price: "1.15ETH",
     },
@@ -65,7 +65,7 @@ const ProductSection: React.FC = () => {
         onMouseOver={() => handleScrole(1)}
         onmouseLeaver={() => stopScrolling()}
       >
-        <img src={require("../public/Vector (1).png")} alt="scroll-right" />
+        <img src={require("../../public/Vector (1).png")} alt="scroll-right" />
       </button>
       <button
         className="scrollLeft"
@@ -73,11 +73,12 @@ const ProductSection: React.FC = () => {
         onMouseOver={() => handleScrole(-1)}
         onmouseLeaver={() => stopScrolling()}
       >
-        <img src={require("../public/Vector (1).png")} alt="scroll-left" />
+        <img src={require("../../public/Vector (1).png")} alt="scroll-left" />
       </button>
       <div className="product" ref={scrollContainer}>
-        {products.map((product) => (
-          <div key={product.id}>
+        {products.map((product,i) => (
+          <div key={i} data-aos="fade-left"
+          data-aos-duration={i + '000'}>
             <img
               src={product.image}
               alt={product.title}
@@ -89,7 +90,7 @@ const ProductSection: React.FC = () => {
               <small>{product.price}</small>
             </span>
             <small>
-              <img src={require("../public/Timer Icon.png")} alt="timer" /> 233
+              <img src={require("../../public/Timer Icon.png")} alt="timer" /> 233
               min left
             </small>
             <section>
@@ -98,7 +99,7 @@ const ProductSection: React.FC = () => {
                   {[1, 2, 3, 4].map((index) => (
                     <img
                       key={index}
-                      src={require(`../public/0${index}.png`)}
+                      src={require(`../../public/0${index}.png`)}
                       width="35px"
                       height="35px"
                       style={{ right: `${index * 10}px` }}
@@ -110,7 +111,7 @@ const ProductSection: React.FC = () => {
               </span>
               <span>
                 <img
-                  src={require("../public/Heart Icon (1).png")}
+                  src={require("../../public/Heart Icon (1).png")}
                   width="20px"
                   height="20px"
                   alt="heart"

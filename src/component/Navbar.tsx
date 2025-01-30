@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate()
   return (
     <div className="nav-con">
       <div className="nav">
@@ -8,10 +10,16 @@ const Navbar: React.FC = () => {
           <img src={require(`../public/Logo.png`)} alt="logo" height="30px" />
         </div>
         <ul>
-          <li>Auction</li>
-          <li>Roadmap</li>
-          <li>Discover</li>
-          <li>Community</li>
+          <li
+          onClick={()=>navigate('../')}
+          >Auction</li>
+          <li
+          onClick={()=>navigate('/single')}
+          >Roadmap</li>
+          <li
+          onClick={()=>navigate('../')}
+          >Discover</li>
+          <li onClick={()=>navigate('/single')}>Community</li>
         </ul>
         <section>
           <button className="btn">Contact</button>

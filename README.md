@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the repository for **NFT Market**, a two-page website built with
+React and TypeScript. This project is structured to keep pages and components
+organized for better maintainability.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Project Overview](#project-overview)
+- [Folder Structure](#folder-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Running the Project Locally](#running-the-project-locally)
+- [Hosted Website](#hosted-website)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Overview
 
-### `npm test`
+This project is a two-page website built using **React** and **TypeScript**. The
+pages are organized in the `pages` folder, and shared components are placed in
+the `components` folder. This structure ensures a clean and maintainable
+codebase.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+project-root/ ├── public/ # Public assets (e.g., images, favicon) ├── src/ │ ├──
+components/ # Shared components used across pages │ ├── pages/ # Individual
+pages, each in its own folder │ │ ├── home/ # Folder for Page 1 │ │ │ ├──
+Home.tsx │ │ │ ├── home.css | | | |── Auction.tsx | | | |── FifthSection.tsx | |
+| |── Header.tsx | | | |── Logosection.tsx | | | |── NinethSection.tsx | | | |──
+NumberSection.tsx | | | |── ProductSection.tsx | | | |── ScrollSection.tsx | | |
+|── SixthSection.tsx │ │ ├── about/ # Folder for Page 2 │ │ │ ├── About.tsx │ │
+│ ├── about.css │ │ │ ├── Auction.tsx │ │ │ ├── Header.tsx │ ├── App.tsx # Main
+application component │ ├── index.tsx # Entry point of the application │ ├──
+index.css # Global styles ├── package.json # Project dependencies and scripts
+├── tsconfig.json # TypeScript configuration ├── README.md # This file ├──
+.gitignore # Git ignore file
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Follow these instructions to get a copy of the project up and running on your
+local machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before you begin, ensure you have the following installed:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- [Git](https://git-scm.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. **Clone the repository:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/blaspace/tobamsGroup_project.git
+   cd your-repo-name
+   npm install
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+### Hosted Website
+
+The website is hosted online and can be accessed at:
+https://tobamsgroup.render.com/
+
+---
+
+### License
+
+This project is licensed under the MIT License. See the LICENSE file for more
+details.

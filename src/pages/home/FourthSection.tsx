@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function FourthSection() {
+  const navigate = useNavigate()
   return (
     <div className="fourth-con">
       <div className="fourth">
-        <div style={{width: '45%'}}>
+        <div style={{ width: "45%" }}>
           <span>OVERLINE</span>
           <br />
           <h1>
@@ -22,12 +24,17 @@ function FourthSection() {
           <br />
           <br />
           <section>
-            <button className="btn2">Get started</button>
-            <button className="btn">Learn more</button>
+            <button className="btn2" onClick={()=>navigate('/single')}>Get started</button>
+            <button className="btn" onClick={()=>navigate('/single')}>Learn more</button>
           </section>
         </div>
-        <div style={{width: "55%"}}>
-          <img src={require("../public/Right - Image.png")} width="100%" />
+        <div style={{ width: "55%" }}>
+          <img
+            src={require("../../public/Right - Image.png")}
+            width="100%"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+          />
         </div>
       </div>
     </div>

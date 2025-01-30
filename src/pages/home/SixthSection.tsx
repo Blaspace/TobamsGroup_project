@@ -5,7 +5,12 @@ function SixthSection() {
     <div className="sixth-con">
       <div className="sixth">
         <div>
-          <img src={require("../public/Left - Image.png")} width="100%" />
+          <img
+            src={require("../../public/Left - Image.png")}
+            width="100%"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          />
         </div>
         <div>
           <span>OVERLINE</span>
@@ -24,7 +29,7 @@ function SixthSection() {
           <br />
           <section>
             <div>
-              <img src={require("../public/Icon.png")} width="30px" />
+              <img src={require("../../public/Icon.png")} width="30px" />
               <br />
               <p>
                 <b>Sollicitudin sapion</b>
@@ -32,7 +37,7 @@ function SixthSection() {
               <span>Cursuss fermentus</span>
             </div>
             <div>
-              <img src={require("../public/Icon (1).png")} width="30px" />
+              <img src={require("../../public/Icon (1).png")} width="30px" />
               <br />
               <p>
                 <b>Sollicitudin sapion</b>

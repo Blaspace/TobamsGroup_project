@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 function FifthSection() {
   const scrollAmount2: number = 5; // Scroll speed (higher = faster)
@@ -17,10 +18,14 @@ function FifthSection() {
     clearInterval(scrollInterval2);
   }
 
+  const navigate = useNavigate()
+
   return (
     <div className="fifth-con">
       <div className="fifth">
-        <section>
+            <section
+            data-aos="fade-up"
+            data-aos-duration="1000" >
           <br/>
           <h3>Checkout the hottest sales offerr</h3>
           <br/>
@@ -31,7 +36,7 @@ function FifthSection() {
             onMouseOver={() => handleScrole2(1)}
             onmouseLeaver={() => stopScrolling2()}
           >
-            <img src={require("../public/Vector (1).png")} />
+            <img src={require("../../public/Vector (1).png")} />
           </button>
           <button
             className="scrollLeft"
@@ -40,68 +45,69 @@ function FifthSection() {
             onMouseOver={() => handleScrole2(-1)}
             onmouseLeaver={() => stopScrolling2()}
           >
-            <img src={require("../public/Vector (1).png")} />
+            <img src={require("../../public/Vector (1).png")} />
           </button>
           <br />
           <div className="product-fifth" ref={scrollContainer2}>
             <div>
               <img
-                src={require("../public/Image (6).png")}
+                src={require("../../public/Image (6).png")}
                 width="100%"
               />
               <p>Lorem ipsum dolor sit amet.</p>
               <span>
                 <small>
-                  <img src={require("../public/Timer Icon.png")} /> 22:09
+                  <img src={require("../../public/Timer Icon.png")} /> 22:09
                 </small>
                 <small>1.15ETH</small>
               </span>
               <section>
                 <span>
                   <p style={{ fontSize: "9px" }}>23 people are bidding</p>
-                  <img src={require("../public/Heart Icon (1).png")} />
+                  <img src={require("../../public/Heart Icon (1).png")} />
                 </span>
               </section>
             </div>
             <div>
               <img
-                src={require("../public/Image (3).png")}
+                src={require("../../public/Image (3).png")}
                 width="100%"
               />
               <p>Lorem ipsum dolor sit amet.</p>
               <span>
                 <small>
-                  <img src={require("../public/Timer Icon.png")} /> 22:09
+                  <img src={require("../../public/Timer Icon.png")} /> 22:09
                 </small>
                 <small>1.15ETH</small>
               </span>
               <section>
                 <span>
                   <p style={{ fontSize: "9px" }}>23 people are bidding</p>
-                  <img src={require("../public/Heart Icon (1).png")} />
+                  <img src={require("../../public/Heart Icon (1).png")} />
                 </span>
               </section>
             </div>
           </div>
           <br />
-          <button className="btn" style={{ textAlign: "center", width: "100%" }}>
+          <button className="btn" style={{ textAlign: "center", width: "100%" }} onClick={()=>navigate('/single')}>
             Show me more
           </button>
         </section>
-        <article>
+        <article data-aos="fade-up"
+            data-aos-duration="2000">
           <div style={{ display: "flex" }}>
             <div className="dotIcon">
-              <img src={require("../public/Ellipse (6).png")} width="7px" />
-              <img src={require("../public/Ellipse (6).png")} width="7px" />
+              <img src={require("../../public/Ellipse (6).png")} width="7px" />
+              <img src={require("../../public/Ellipse (6).png")} width="7px" />
               <img
-                src={require("../public/Ellipse (6).png")}
+                src={require("../../public/Ellipse (6).png")}
                 width="7px"
               />{" "}
             </div>
             <div className="triangle"></div>
           </div>
           <section>
-            <img  src={require('../public/hand.png')} width="90%"/>
+            <img  src={require('../../public/hand.png')} width="90%" className="hand"/>
             <h3>Get started creating and selling your NFTs</h3>
             <br/>
             <span style={{fontSize: '13px'}}>
@@ -109,85 +115,89 @@ function FifthSection() {
             Only files inside the `public` folder can
             </span>
             <br/>
-            <button className="btn2" style={{width: '100%'}}>Get started</button>
+            <button className="btn2" style={{width: '100%'}} onClick={()=>navigate('/single')}>Get started</button>
           </section>
         </article>
-        <section>
+        <section 
+        data-aos="fade-up"
+            data-aos-duration="3000"
+        >
           <h3>Top NFT at low price</h3>
           <br />
           <div className="nft">
-            <img src={require("../public/Item (1).png")} />
+            <img src={require("../../public/Item (1).png")} />
             <section>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <br />
               <span>
                 <p style={{ fontSize: "12px" }}>
-                  <img src={require("../public/Timer Icon.png")} /> 22:09
+                  <img src={require("../../public/Timer Icon.png")} /> 22:09
                 </p>
                 <small>1.15ETH</small>
               </span>
               <span>
                 <p style={{ fontSize: "9px" }}>50 people are bidding</p>
-                <img src={require("../public/Heart Icon (1).png")} />
+                <img src={require("../../public/Heart Icon (1).png")} />
               </span>
             </section>
           </div>
           <br />
           <div className="nft">
-            <img src={require("../public/Image-3 (4).png")} />
+            <img src={require("../../public/Image-3 (4).png")} />
             <section>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <br />
               <span>
                 <p style={{ fontSize: "12px" }}>
-                  <img src={require("../public/Timer Icon.png")} /> 22:09
+                  <img src={require("../../public/Timer Icon.png")} /> 22:09
                 </p>
                 <small>1.15ETH</small>
               </span>
               <span>
                 <p style={{ fontSize: "9px" }}>23 people are bidding</p>
-                <img src={require("../public/Heart Icon (1).png")} />
+                <img src={require("../../public/Heart Icon (1).png")} />
               </span>
             </section>
           </div>
           <br />
           <div className="nft">
-            <img src={require("../public/Image-2 (4).png")} />
+            <img src={require("../../public/Image-2 (4).png")} />
             <section>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <br />
               <span>
                 <p style={{ fontSize: "12px" }}>
-                  <img src={require("../public/Timer Icon.png")} /> 22:09
+                  <img src={require("../../public/Timer Icon.png")} /> 22:09
                 </p>
                 <small>1.15ETH</small>
               </span>
               <span>
                 <p style={{ fontSize: "9px" }}>23 people are bidding</p>
-                <img src={require("../public/Heart Icon (1).png")} />
+                <img src={require("../../public/Heart Icon (1).png")} />
               </span>
             </section>
           </div>
           <br />
           <div className="nft">
-            <img src={require("../public/Item.png")} />
+            <img src={require("../../public/Item.png")} />
             <section>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <br />
               <span>
                 <p style={{ fontSize: "12px" }}>
-                  <img src={require("../public/Timer Icon.png")} /> 22:09
+                  <img src={require("../../public/Timer Icon.png")} /> 22:09
                 </p>
                 <small>1.15ETH</small>
               </span>
               <span>
                 <p style={{ fontSize: "9px" }}>23 people are bidding</p>
-                <img src={require("../public/Heart Icon (1).png")} />
+                <img src={require("../../public/Heart Icon (1).png")} />
               </span>
             </section>
           </div>
           <br/>
-          <button className="btn" style={{width: '100%'}}>Show me more</button>
+          onClick={()=>navigate('/single')}
+          <button className="btn" style={{width: '100%'}} onClick={()=>navigate('/single')}>Show me more</button>
         </section>
       </div>
     </div>
