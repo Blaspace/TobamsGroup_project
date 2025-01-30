@@ -1,4 +1,4 @@
-# Project Name
+# Tobams Technical Assesment
 
 Welcome to the repository for **NFT Market**, a two-page website built with
 React and TypeScript. This project is structured to keep pages and components
@@ -15,7 +15,6 @@ organized for better maintainability.
   - [Installation](#installation)
 - [Running the Project Locally](#running-the-project-locally)
 - [Hosted Website](#hosted-website)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
@@ -31,18 +30,36 @@ codebase.
 
 ## Folder Structure
 
-project-root/ ├── public/ # Public assets (e.g., images, favicon) ├── src/ │ ├──
-components/ # Shared components used across pages │ ├── pages/ # Individual
-pages, each in its own folder │ │ ├── home/ # Folder for Page 1 │ │ │ ├──
-Home.tsx │ │ │ ├── home.css | | | |── Auction.tsx | | | |── FifthSection.tsx | |
-| |── Header.tsx | | | |── Logosection.tsx | | | |── NinethSection.tsx | | | |──
-NumberSection.tsx | | | |── ProductSection.tsx | | | |── ScrollSection.tsx | | |
-|── SixthSection.tsx │ │ ├── about/ # Folder for Page 2 │ │ │ ├── About.tsx │ │
-│ ├── about.css │ │ │ ├── Auction.tsx │ │ │ ├── Header.tsx │ ├── App.tsx # Main
-application component │ ├── index.tsx # Entry point of the application │ ├──
-index.css # Global styles ├── package.json # Project dependencies and scripts
-├── tsconfig.json # TypeScript configuration ├── README.md # This file ├──
-.gitignore # Git ignore file
+project-root/ 
+├── public/ # Public assets (e.g., images, favicon) 
+├── src/ 
+│ ├──components / # Shared components used across pages 
+│ ├── pages / # Individual pages, each in its own folder 
+│ │ ├── home / # Folder for Page 1 
+│ │ │ ├──Home.tsx 
+│ │ │ ├── home.css 
+| | | |── Auction.tsx 
+| | | |── FifthSection.tsx 
+| | | |── Header.tsx 
+| | | |── Logosection.tsx 
+| | | |── NinethSection.tsx 
+| | | |──NumberSection.tsx 
+| | | |── ProductSection.tsx 
+| | | |── ScrollSection.tsx 
+| | |
+|── SixthSection.tsx 
+│ │ ├── about/ # Folder for Page 2 
+│ │ │ ├── About.tsx 
+│ ││ ├── about.css 
+│ │ │ ├── Auction.tsx 
+│ │ │ ├── Header.tsx 
+│ ├── App.tsx # Main application component 
+│ ├── index.tsx # Entry point of the application 
+│ ├──index.css # Global styles 
+├── package.json # Project dependencies and scripts
+├── tsconfig.json # TypeScript configuration 
+├── README.md # This file 
+├──.gitignore # Git ignore file
 
 ---
 
@@ -75,7 +92,7 @@ Before you begin, ensure you have the following installed:
 ### Hosted Website
 
 The website is hosted online and can be accessed at:
-https://tobamsgroup.render.com/
+https://tobamsgroup.onrender.com/
 
 ---
 
