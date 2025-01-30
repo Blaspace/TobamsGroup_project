@@ -34,7 +34,7 @@ function FifthSection() {
             id="scrollRight"
             style={{ top: "40%", right: "5px" }}
             onMouseOver={() => handleScrole2(1)}
-            onmouseLeaver={() => stopScrolling2()}
+            onMouseOut={() => stopScrolling2()}
           >
             <img src={require("../../public/Vector (1).png")} />
           </button>
@@ -43,7 +43,7 @@ function FifthSection() {
             id="scrollLeft"
             style={{ top: "40%", left: "5px" }}
             onMouseOver={() => handleScrole2(-1)}
-            onmouseLeaver={() => stopScrolling2()}
+            onMouseOut={() => stopScrolling2()}
           >
             <img src={require("../../public/Vector (1).png")} />
           </button>

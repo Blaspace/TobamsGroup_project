@@ -63,7 +63,7 @@ const ProductSection: React.FC = () => {
         className="scrollRight"
         id="scrollRight"
         onMouseOver={() => handleScrole(1)}
-        onMouseLeaver={() => stopScrolling()}
+        onMouseOut={() => stopScrolling()}
       >
         <img src={require("../../public/Vector (1).png")} alt="scroll-right" />
       </button>
@@ -71,7 +71,7 @@ const ProductSection: React.FC = () => {
         className="scrollLeft"
         id="scrollLeft"
         onMouseOver={() => handleScrole(-1)}
-        onMouseLeaver={() => stopScrolling()}
+        onMouseOut={() => stopScrolling()}
       >
         <img src={require("../../public/Vector (1).png")} alt="scroll-left" />
       </button>

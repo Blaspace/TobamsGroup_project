@@ -80,10 +80,22 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository:**
 
-   ```bash
+  ```bash
    git clone https://github.com/blaspace/tobamsGroup_project.git
-   cd your-repo-name
+   ```
+2 **Cavigate to repository**
+
+```bash
+   cd tobamsGroup_project
+   ```
+3. **Install dependencies**
+
+```bash
    npm install
+   ```
+
+4. **Run application**
+```bash
    npm start
    ```
 
