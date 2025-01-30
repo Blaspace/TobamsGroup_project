@@ -1,4 +1,4 @@
-# Tobams Technical Assesment
+# Tobams Technical Assessment
 
 Welcome to the repository for **NFT Market**, a two-page website built with
 React and TypeScript. This project is structured to keep pages and components
