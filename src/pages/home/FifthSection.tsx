@@ -196,7 +196,6 @@ function FifthSection() {
             </section>
           </div>
           <br/>
-          onClick={()=>navigate('/single')}
           <button className="btn" style={{width: '100%'}} onClick={()=>navigate('/single')}>Show me more</button>
         </section>
       </div>
