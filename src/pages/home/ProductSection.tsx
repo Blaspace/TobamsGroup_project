@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 
+//horixontal scroll
 const ProductSection: React.FC = () => {
   const scrollAmount: number = 5; // Scroll speed (higher = faster)
   const scrollContainer = useRef();

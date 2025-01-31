@@ -34,7 +34,7 @@ function Auction() {
       bidding: 22,
     },
   ];
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="seventh-con">
       <span style={{ fontSize: "13px" }}>OVERLINE</span>
@@ -43,28 +43,28 @@ function Auction() {
         <button
           className="btn"
           style={{ height: "35px", border: "1px solid #7780a1" }}
-          onClick={()=>navigate('/single')}
+          onClick={() => navigate("/single")}
         >
           Architecture
         </button>
         <button
           className="btn"
           style={{ height: "35px", border: "1px solid #7780a1" }}
-          onClick={()=>navigate('/single')}
+          onClick={() => navigate("/single")}
         >
           Photography
         </button>
         <button
           className="btn"
           style={{ height: "35px", border: "1px solid #7780a1" }}
-          onClick={()=>navigate('/single')}
+          onClick={() => navigate("/single")}
         >
           Games
         </button>
         <button
           className="btn"
           style={{ height: "35px", border: "1px solid #7780a1" }}
-          onClick={()=>navigate('/single')}
+          onClick={() => navigate("/single")}
         >
           Music
         </button>
@@ -72,22 +72,19 @@ function Auction() {
       <div className="seventh">
         {auction.map((value, i) => {
           return (
-            <div 
-            data-aos="fade-up"
-            data-aos-duration={i +'000'}
-          onClick={()=>navigate('/single')}
+            <div
+              data-aos="fade-up"
+              data-aos-duration={i + "000"}
+              onClick={() => navigate("/single")}
             >
-              <img
-                src={value.img}
-                width="100%"
-                height="250px"
-              />
+              <img src={value.img} width="100%" height="250px" />
               <span>
                 <p>{value.name}</p>
                 <small>1.15ETH</small>
               </span>
               <small>
-                <img src={require("../../public/Timer Icon.png")} /> 233 min left
+                <img src={require("../../public/Timer Icon.png")} /> 233 min
+                left
               </small>
               <section>
                 <span>
