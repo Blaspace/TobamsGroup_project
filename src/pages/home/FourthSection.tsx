@@ -32,7 +32,7 @@ function FourthSection() {
           <img
             src={require("../../public/Right - Image.png")}
             width="100%"
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
           />
         </div>
