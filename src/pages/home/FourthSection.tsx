@@ -6,7 +6,7 @@ function FourthSection() {
   return (
     <div className="fourth-con">
       <div className="fourth">
-        <div style={{ width: "45%" }}>
+        <div>
           <span>OVERLINE</span>
           <br />
           <h1>
@@ -28,7 +28,7 @@ function FourthSection() {
             <button className="btn" onClick={()=>navigate('/single')}>Learn more</button>
           </section>
         </div>
-        <div style={{ width: "55%" }}>
+        <div>
           <img
             src={require("../../public/Right - Image.png")}
             width="100%"

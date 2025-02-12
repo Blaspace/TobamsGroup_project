@@ -12,12 +12,7 @@ const Footer: React.FC = () => {
             <li>License</li>
           </ol>
         </div>
-        <div
-          style={{
-            borderLeft: "1px solid #262840",
-            borderRight: "1px solid #262840",
-          }}
-        >
+        <div className="footer-mid">
           <ul>
             <li>Auctions</li>
             <li>Roadmap</li>

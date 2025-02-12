@@ -39,7 +39,7 @@ function Auction() {
     <div className="seventh-con">
       <span style={{ fontSize: "13px" }}>OVERLINE</span>
       <h2>Most populer live auction</h2>
-      <section style={{ display: "flex", gap: "10px" }}>
+      <section style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
         <button
           className="btn"
           style={{ height: "35px", border: "1px solid #7780a1" }}
@@ -74,7 +74,7 @@ function Auction() {
           return (
             <div
               data-aos="fade-up"
-              data-aos-duration={i + "000"}
+              data-aos-duration={1+i + "00"}
               onClick={() => navigate("/single")}
             >
               <img src={value.img} width="100%" height="250px" />

@@ -25,7 +25,7 @@ function Header() {
                 </article>
               </span>
               <span>
-                <img src={require("../../public/Ellipse (4).png")}width="50px" />
+                <img src={require("../../public/Ellipse (4).png")} width="50px" />
                 <article>
                   <small style={{color: '#7780a1'}}>lorem due</small>
                   <p>@lorem den</p>
